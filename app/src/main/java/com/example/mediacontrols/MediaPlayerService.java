@@ -78,7 +78,7 @@ public class MediaPlayerService extends Service{
 
         Notification.MediaStyle style = new Notification.MediaStyle();
 
-        Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.lakalle);
+        Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.ic_playing);
         Intent intent = new Intent(getApplicationContext(), MediaPlayerService.class);
         intent.setAction(ACTION_STOP);
         PendingIntent pendingIntent = PendingIntent.getService(getApplicationContext(), 1, intent, 0);
